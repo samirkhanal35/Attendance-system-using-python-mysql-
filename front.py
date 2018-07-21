@@ -23,7 +23,8 @@ def front(cursor):
 	print("\t 4.Delete Table\n")
 	print("\t 5.Show Attendance\n")
 	print("\t 6.Update Attendance\n")
-	print("\t 7.Exit\n")
+	print("\t 7.Show Tables\n")
+	print("\t 8.Exit\n")
 	a = int(input("\t Select your choice: "))
 	mn.main(cursor,a)
 	
