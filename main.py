@@ -13,7 +13,7 @@ def main(cursor,a):
 	elif a == 2:
 		crt.cr_table(cursor)
 	elif a == 3:
-		datae
+		datae.entry(cursor)
 	elif a == 4:
 		delt
 	elif a == 5:

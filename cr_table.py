@@ -1,5 +1,6 @@
 def cr_table(cursor):
-	a = str(input("Enter the name of table to create:"))
+	#a = str(input("Enter the name of table to create:"))
 	
-	cursor.execute("CREATE TABLE %s (name varchar(20));" %a)
+	cursor.execute("CREATE TABLE samir (name varchar(20));")
+
 	
