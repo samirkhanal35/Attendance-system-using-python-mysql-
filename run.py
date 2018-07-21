@@ -13,6 +13,8 @@ cursor = db.cursor()
 
 frnts.front(cursor)
 
+
+
 a = str(input("Do yo want to exit(y/n):"))
 if a == "y":
 	exit;
