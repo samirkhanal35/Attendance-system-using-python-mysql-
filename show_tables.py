@@ -1,9 +1,4 @@
-def attendance(cursor):
-    import front as frnts
-
-
-
-
+def show_table(cursor):
 
 
     condtn = input("Do yo want to exit? 1.Yes")
@@ -11,6 +6,3 @@ def attendance(cursor):
 		exit()
 	else :
 		frnts.front(cursor)
-
-
-

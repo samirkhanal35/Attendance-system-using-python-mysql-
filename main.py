@@ -1,4 +1,5 @@
 def main(cursor,a):
+	import front as frnts
 	import attendance as atd
 	import cr_table as crt
 	import del_table as delt
@@ -8,14 +9,16 @@ def main(cursor,a):
 	import front as frnts
 	import os
 	#os.system("clear")
+
+
 	if a == 1:
-		atd
+		atd.attendance(cursor)
 	elif a == 2:
 		crt.cr_table(cursor)
 	elif a == 3:
 		datae.entry(cursor)
 	elif a == 4:
-		delt
+		delt.delete(cursor)
 	elif a == 5:
 		shwatd.show(cursor)
 	elif a == 6:
@@ -23,5 +26,4 @@ def main(cursor,a):
 	elif a == 7:
 		exit()
 	else :
-		
 		frnts.front()

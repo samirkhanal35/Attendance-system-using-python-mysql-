@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 def front(cursor):
+	import front as frnts
 	import attendance as atd
 	import cr_table as crt
 	import del_table as delt
@@ -34,3 +35,4 @@ def front(cursor):
 
 
 	#print(a)
+	#frnts.front(cursor)

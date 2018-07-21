@@ -15,16 +15,6 @@ frnts.front(cursor)
 
 
 
-a = str(input("Do yo want to exit(y/n):"))
-if a == "y":
-	exit;
-else :
-	frnts.front(cursor)
-	
-		
-
-
-
 # execute SQL query using execute() method.
 cursor.execute("SELECT VERSION()")
 
