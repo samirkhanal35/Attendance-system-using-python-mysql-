@@ -6,10 +6,11 @@ def entry(cursor):
 	i = 1
 	while (i == 1):
 		b = str(input("Enter the name of student:"))
-		cursor.execute("INSERT INTO "+a+" VALUES ( '%s' );" %b)
-		i = input("Do you want to add another name? 1.Yes 2.No")
+		cursor.execute("INSERT INTO "+a+" VALUES ( '%s' , 0);" %b)
+		i = int(input("Do you want to add another name? 1.Yes 2.No"))
 
 
+	cursor.execute("COMMIT WORK;")
 	condtn = input("Do yo want to exit? 1.Yes 2.No")
 	if condtn == 1:
 		exit()

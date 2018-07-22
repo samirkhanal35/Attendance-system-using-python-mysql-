@@ -5,6 +5,7 @@ def delete(cursor):
 
 	cursor.execute("DROP TABLE %s ;" %a)
 	print("The %s table has been deleted." %a)
+	cursor.execute("COMMIT WORK;")
 
 
 	condtn = input("Do yo want to exit? 1.Yes")

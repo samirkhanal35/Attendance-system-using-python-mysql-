@@ -13,6 +13,7 @@ def show_table(cursor):
     condtn = 0
 
 
+    cursor.execute("COMMIT WORK;")
     condtn = int(input("Do yo want to exit? 1.Yes"))
     if condtn == 1:
         exit()
