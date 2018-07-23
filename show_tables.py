@@ -4,11 +4,12 @@ def show_table(cursor):
     result = cursor.fetchall()
 
     print("**** Tables present in Database ****\n")
-    print(result[0],end=" ")
-    print("\n")
 
+    a= len(result) - 121
 
-
+    for i in range(0,a):
+        print(result[i],end=" ")
+        print("\n")
 
     condtn = 0
 
