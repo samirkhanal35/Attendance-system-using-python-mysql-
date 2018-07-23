@@ -23,7 +23,7 @@ def main(cursor,a):
     elif a == 5:
         shwatd.show(cursor)
     elif a == 6:
-        updatd
+        updatd.update(cursor)
     elif a == 7:
         st.show_table(cursor)
     elif a == 8:

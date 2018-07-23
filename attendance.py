@@ -1,7 +1,7 @@
 def attendance(cursor):
     condtn = 0
     import front as frnts
-    c = str(input("Enter the table name to be displayed:"))
+    c = str(input("Enter the class name to take attendance from:"))
     cursor.execute("SELECT * FROM %s;" %c)
 
     result = cursor.fetchall()
@@ -17,7 +17,7 @@ def attendance(cursor):
         a=a-1
 
     cursor.execute("COMMIT WORK;")
-    condtn = input("Do yo want to exit? 1.Yes")
+    condtn = input("*****Press any number to return to the main menu*****")
     if condtn == 1:
         exit()
     else :

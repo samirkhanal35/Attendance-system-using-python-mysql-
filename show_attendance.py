@@ -1,7 +1,7 @@
 def show(cursor):
     b=0
     import front as frnts
-    a = str(input("Enter the table name to be displayed:"))
+    a = str(input("Enter the class room name to be displayed:"))
     cursor.execute("SELECT * FROM %s;" %a)
     result = cursor.fetchall()
 
@@ -11,7 +11,7 @@ def show(cursor):
     for row in result:
         print (row[0],row[1])
     cursor.execute("COMMIT WORK;")
-    condtn = input("Do yo want to exit? 1.Yes 2.No")
+    condtn = input("*****Press any number to return to the main menu*****")
     if condtn == 1:
         exit()
     else :

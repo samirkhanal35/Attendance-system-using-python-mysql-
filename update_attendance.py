@@ -1,7 +1,7 @@
 def update(cursor):
     b=0
     import front as frnts
-    a = str(input("Enter the table name to be updated:"))
+    a = str(input("Enter the class room name to be updated:"))
     cursor.execute("SELECT * FROM %s;" %a)
     result = cursor.fetchall()
     #de = result[2]
@@ -12,7 +12,7 @@ def update(cursor):
     de = str(input("Enter the name of student to change attendance:"))
     cursor.execute("UPDATE "+c+" SET totalattendance=totalattendance+1 WHERE name = '%s';" %de[0])
     cursor.execute("COMMIT WORK;")
-    condtn = input("Do yo want to exit? 1.Yes 2.Noz")
+    condtn = input("*****Press any number to return to the main menu*****")
     if b == 1:
         exit()
     else :

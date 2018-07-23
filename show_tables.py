@@ -14,7 +14,7 @@ def show_table(cursor):
 
 
     cursor.execute("COMMIT WORK;")
-    condtn = int(input("Do yo want to exit? 1.Yes"))
+    condtn = int(input("*****Press any number to return to the main menu*****"))
     if condtn == 1:
         exit()
     else :
