@@ -2,7 +2,7 @@ def cr_table(cursor):
 	import front as frnts
 	a = input("Enter the name of the classroom to create:")
 	
-	cursor.execute("CREATE TABLE %s (name varchar(40), totalattendance INTEGER );" %a)
+	cursor.execute("CREATE TABLE %s (name varchar(40), totalattendance varchar(5) );" %a)
 	print("The %s classroom table has been created."%a)
 	cursor.execute("COMMIT WORK;")
 

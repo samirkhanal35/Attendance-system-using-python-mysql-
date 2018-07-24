@@ -10,7 +10,19 @@ def update(cursor):
         print (row[0],row[1])
 
     de = str(input("Enter the name of student to change attendance:"))
-    cursor.execute("UPDATE "+c+" SET totalattendance=totalattendance+1 WHERE name = '%s';" %de[0])
+    #df = int(input("Enter the attendance to be updated of %s :" %de))
+    lp = int(input("Enter \n1. To increase attendance by 1 \n 2. To decrease attendance by 1:"))
+    if lp == 1:
+        cursor.execute("UPDATE "+a+" SET totalattendance=totalattendance+1 WHERE name = '%s';" %de[0] )
+        cursor.execute("COMMIT WORK;")
+        print("Attendance has been incresed by ones")
+    elif lp == 2:
+        cursor.execute("UPDATE "+a+" SET totalattendance=totalattendance-1 WHERE name = '%s';" %de[0] )
+        cursor.execute("COMMIT WORK;")
+        print("Attendance has been decreased by one")
+    else :
+        print("\n****Invalid input****")
+
     cursor.execute("COMMIT WORK;")
     condtn = input("*****Press any number to return to the main menu*****")
     if b == 1:

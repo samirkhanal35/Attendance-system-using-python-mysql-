@@ -1,8 +1,8 @@
-import front as frnts
+#!/usr/bin/python
+
 
 import MySQLdb
-import os
-
+import front as frnts
 # Open database connection
 db = MySQLdb.connect("localhost","samir","sk","attendance" )
 
